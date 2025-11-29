@@ -22,12 +22,12 @@ public class EmployeeController {
 	
 	@GetMapping("/")
 	public String loadMain() {
-		return "/home.html";
+		return "home.html";
 	}
 	
 	@GetMapping("/add")
 	public String add() {
-		return "/add.html";
+		return "add.html";
 	}
 	
 	@PostMapping("/add")
