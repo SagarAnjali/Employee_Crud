@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+<h1>Edit Employee</h1>
+<form action="/update" method="post" >
+	<input type="hidden" name="id" th:value="${emp.id}">
+	Name: <input type="text" name="name" th:value="${emp.name}"><br><br>
+	ImageLink: <input type="text" name="imagelink" th:value="${emp.imagelink}"><br><br>
+	Salary: <input type="text" name="salary" th:value="${emp.salary}"><br><br>
+	Mobile: <input type="text" name="mobile" th:value="${emp.mobile}"><br><br>
+	<button>Update</button><br><br>
+		</form>
+	<a href="/"><button>Back</button></a>
+
+</div>
+
+</body>
+</html>
